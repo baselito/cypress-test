@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // For modern JavaScript features
+    "lib": ["ES2020", "dom"],
+    "types": ["cypress", "node"],
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "module": "commonjs", // Ensures compatibility with Node.js
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "baseUrl": "https://www.saucedemo.com/"
+  },
+  "include": [
+    "cypress/e2e/**/*.ts",
+    "cypress/**/*.ts",
+    "cypress/support/e2e.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "cypress/screenshots",
+    "cypress/videos",
+    "cypress/downloads"
+  ]
+}
