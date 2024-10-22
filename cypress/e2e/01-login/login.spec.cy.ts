@@ -9,7 +9,7 @@ describe("Login Test", () => {
   });
 
   it("Verify successful login by checking URL and inventory list visibility", () => {
-    cy.visit(`${baseUrl}inventory.html`, {
+    cy.visit(`${baseUrl}/inventory.html`, {
       failOnStatusCode: false,
     });
     cy.url().should("contain", "/inventory");
